@@ -18,6 +18,7 @@ export default function Product (){
             console.log(err);
         })
     }
+    getPrduct()
 
 
 return(
@@ -26,6 +27,7 @@ return(
             <Button variant="contained" onClick={getPrduct}>get products</Button>
                   <img src={Model.image} height={220}width={200}/><br/>
                   <p> <h2>Product </h2>{Model.title}</p>
+                  <p> <h2>price</h2>{Model.price}</p>
                   </div>
     </>
 )

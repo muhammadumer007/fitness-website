@@ -21,10 +21,11 @@ export default function Home (){
   }
   getData()
  
-  
+const Param=useParams()
   const navigate =useNavigate()
   let clickCard =(id)=>{
-    navigate(`/About/ ${id}`);
+    navigate(`/about/${Param.id}`);
+    // console.log(id);
   }
 
   
@@ -46,7 +47,8 @@ export default function Home (){
                   <img src={x.image} height={220}width={200}/><br/>
                   <p> <h2>Product </h2>{x.title}</p>
                   <Button variant="contained" onClick={ ()=>clickCard(x.id)}  
-                key={i} type="" >Buy Now</Button>
+                key={i} type="">Buy
+                </Button>
                   
                   </div> 
                   </div> 
