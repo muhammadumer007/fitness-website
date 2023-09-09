@@ -23,11 +23,14 @@ export default function Product (){
 
 return(
     <>
-     <div className="container"> 
-            <Button variant="contained" onClick={getPrduct}>get products</Button>
+        <div className="about-container"> 
+            {/* <Button variant="contained" onClick={getPrduct}>get products</Button> */}
                   <img src={Model.image} height={220}width={200}/><br/>
-                  <p> <h2>Product </h2>{Model.title}</p>
-                  <p> <h2>price</h2>{Model.price}</p>
+            <p> {Model.title}</p>
+            <br />
+            <h2>price:</h2> <p>{Model.price}</p>
+            <br/>
+            <h2>About product</h2> <p>{Model.description}</p>
                   </div>
     </>
 )

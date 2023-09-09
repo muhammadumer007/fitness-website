@@ -16,7 +16,7 @@ export default function Routter(){
             <Routes>
 
             <Route path='/' element={<Home/>}/>
-            <Route path='About' element={<Product/>}/>
+            <Route path='/About/:id' element={<Product/>}/>
             <Route path='Service' element={<Services/>}/>
             <Route path='Contact' element={<Contact/>}/>
             <Route path='Blog' element={<Blog/>}/>

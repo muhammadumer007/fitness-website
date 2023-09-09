@@ -21,10 +21,9 @@ export default function Home (){
   }
   getData()
  
-const Param=useParams()
   const navigate =useNavigate()
   let clickCard =(id)=>{
-    navigate(`/about/${Param.id}`);
+    navigate(`/about/${id}`);
     // console.log(id);
   }
 
